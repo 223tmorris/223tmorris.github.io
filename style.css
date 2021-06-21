@@ -1,0 +1,145 @@
+body{
+  font-family:"Comic Sans MS";
+}
+nav{
+  font-family:"Arial";
+}
+div.jumbotron{
+  font-family:"Times New Roman";
+  background-image:url("https://publicdomainpictures.net/pictures/310000/velka/himmel-wolken-landschaft-natur-1573913831tLk.jpg");
+  background-attachment:fixed;
+  background-position:center;
+  background-repeat:no-repeat;
+  background-size:cover;
+}
+div.jumbotron h1{
+  font-size:9.5em;
+}
+div.jumbotron p{
+  font-size:4.1em;
+}
+.heading-home{
+  font-size:44pt;
+}
+.text-home{
+  font-size:26pt;
+}
+.img-home{
+  width:250px;
+  height:250px;
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+}
+.div-img-home{
+  transform:rotate(90deg);
+}
+.list-home{
+  font-size:1.5em;
+}
+.rotate-cw{
+  animation:rotation-cw 3s infinite linear alternate-reverse;
+  margin-left:auto;
+  margin-right:auto;
+  display:block;
+}
+@keyframes rotation-cw{
+  from{
+    transform:rotate(0deg);
+  }
+  to{
+    transform:rotate(-180deg);
+  }
+}
+.rotate-ccw{
+  animation:rotation-ccw 3s infinite linear alternate-reverse;
+  margin-left:auto;
+  margin-right:auto;
+  display:block;
+}
+@keyframes rotation-ccw{
+  from{
+    transform:rotate(0deg);
+  }
+  to{
+    transform:rotate(180deg);
+  }
+}
+.carousel{
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+  width:800px;
+  height:532px;
+  color:white;
+}
+div.caption h3{
+  color:white;
+}
+div.caption h3:hover{
+  color:darkgray;
+  text-decoration:underline;
+}
+p.footer{
+  color:black;
+}
+p.footer a{
+  color:#595959;
+}
+p.footer a:hover{
+  color:#060606;
+}
+#heading-about{
+  font-size:70pt;
+}
+.text-about h1{
+  font-size:40pt;
+}
+.text-about p{
+  font-size:18pt;
+}
+table, th, td{
+    text-align:center;
+    border:2px solid black;
+    border-collapse:collapse;
+    margin-left:auto;
+    margin-right:auto;
+    font-size:18pt;
+    margin-top:30px;
+    margin-bottom:40px;
+}
+th, td{
+    padding:10px;
+}
+thead{
+  background-color:#606060;
+  color:white;
+}
+tbody tr:nth-child(odd){
+    background-color:white;
+}
+tr:nth-child(even){
+    background-color:lightgray;
+}
+.caption{
+  font-size:16pt;
+  margin-top:15px;
+  margin-bottom:15px;
+}
+body{
+  background-image:url("https://images.pexels.com/photos/19670/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  background-repeat:no-repeat;
+  background-size:cover;
+}
+footer{
+  outline:1px solid black;
+}
+.img-about{
+  filter:grayscale(100%);
+  margin-top:15px;
+  margin-bottom:15px;
+}
+.img-about:hover{
+  transition:filter 0.5s linear;
+  filter:grayscale(0%);
+}
