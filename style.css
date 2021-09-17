@@ -6,7 +6,7 @@ nav{
 }
 div.jumbotron{
   font-family:"Times New Roman";
-  background-image:url("https://publicdomainpictures.net/pictures/310000/velka/himmel-wolken-landschaft-natur-1573913831tLk.jpg");
+  background-image:url("sunset.jpg");
   background-attachment:fixed;
   background-position:center;
   background-repeat:no-repeat;
@@ -127,7 +127,7 @@ tr:nth-child(even){
   margin-bottom:15px;
 }
 body{
-  background-image:url("https://images.pexels.com/photos/19670/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  background-image:url("clouds.jpg");
   background-repeat:no-repeat;
   background-size:cover;
 }
