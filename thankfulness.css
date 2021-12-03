@@ -1,0 +1,46 @@
+/* Remove the navbar's default margin-bottom and rounded borders */
+.sidenav{
+  background-color:#F8B12C;
+}
+
+.bg{
+  background-color:#996236;
+  font-family:"Comic Sans MS";
+}
+
+.foot{
+  background-color:#382615;
+  color:#859D3C;
+}
+
+.link{
+  color:black;
+}
+
+.link:hover{
+  background-color:#9D221E;
+}
+
+/* Add some padding to the footer */
+footer{
+  padding:25px;
+}
+
+.thank{
+  font-size:24pt;
+}
+
+.smaller{
+  width:250px;
+  height:450px;
+}
+
+img{
+  display:inline;
+}
+
+.img-sidebar{
+  display:block;
+  margin:auto;
+  width:80%
+}
