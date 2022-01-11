@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+    <title>
+    Portfolio | Goals for the New Year
+    </title>
+    <link rel="icon" type="image/icon type" href="portfolio.png">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+    <script
+     src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"
+    ></script>
+
+    <script
+     type="text/javascript" src="https://static.codehs.com/gulp/80550f5fc4071985bfef352d04f005ca3de931d3/chs-js-lib/chs.js"
+    ></script>
+
+
+    <style>
+
+    canvas{
+        border: 1px solid black;
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    /* Remove the navbar's default margin-bottom and rounded borders */
+    .navbar{
+      margin-bottom:0;
+      border-radius:0;
+    }
+
+    /* Add some padding to the footer */
+    footer{
+      padding:25px;
+    }
+    </style>
+
+    <link rel="stylesheet" type="text/css" href="goalsstyle.css">
+    </head>
+
+
+    <body>
+      <!-- navbar -->
+      <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="work.html">Back to Portfolio</a>
+          </div>
+        </div>
+      </nav>
+
+      <!-- page header -->
+      <div class="jumbotron">
+        <div class="container text-center">
+          <h1>My Goals for the New Year</h1>
+        </div>
+      </div>
+
+      <div class="container-fluid sans">
+        <div class="row margin" style="margin-top:10px;">
+          <div class="col-sm-8">
+            <h1 class="text-center">this year i plan to get absolutely jacked. like totally yolked. chris hemsworth will look at me and be like, 'damn, he shredded as heck!'</>
+            <h4 class="text-center">this is what i will look like in december trust bro:</h4>
+            <img src="https://preview.redd.it/n5y2kuunn7n71.jpg?auto=webp&s=c55ba6035e6f1264b07496e75fc437a4909b15e1" alt="extremely jacked dude">
+          </div>
+
+          <div class="col-sm-4">
+            <canvas width="400" height="500" class="codehs-editor-canvas center"></canvas>
+
+                <script>
+
+                window.onload = function() {
+
+                    var RADIUS = 25;
+                    var INCREMENT = 1;
+
+                   function start(){
+                     var text = new Text("pov my muscles", "30pt Comic Sans MS");
+                     text.setPosition(getWidth()/2 - 135, getHeight()/2 - 135);
+                     add(text);
+
+                     var outline = new Circle(100);
+                     outline.setPosition(getWidth()/2, getHeight()/2);
+                     outline.setColor(Color.black);
+                     add(outline);
+
+                     var inside = new Circle(96);
+                     inside.setPosition(getWidth()/2, getHeight()/2);
+                     inside.setColor(Color.white);
+                     add(inside);
+
+                     setTimer(circle, 50);
+                    }
+
+                    function circle(){
+                      var muscle = new Circle(RADIUS);
+                      muscle.setPosition(getWidth()/2, getHeight()/2);
+                      muscle.setColor(Color.red);
+                      add(muscle);
+
+                      RADIUS += INCREMENT;
+
+                      if(RADIUS == 96){
+
+                        RADIUS = 25;
+                        muscle.setColor(Color.white);
+                      }
+                    }
+
+                  if (typeof start === 'function') {
+                      start();
+                  }
+                };
+                </script>
+          </div>
+        </div>
+
+        <br><hr>
+
+        <h1 class="text-center"><u>I have four goals.</u></h1>
+
+        <div class="spacing">
+        <div class="row margin">
+          <div class="col-sm-8">
+            <h1>Sleep</h1>
+            <h3>This year, I mainly plan to improve my sleep schedule. I get nearly no sleep and it makes it difficult to read things for my classes. I literally can't read a book for English
+              without falling asleep at some point. This is probably the most important resolution I have and the one I will put the most effort towards achieving.</h3>
+          </div>
+
+          <div class="col-sm-4">
+            <img src="https://publicdomainpictures.net/pictures/100000/velka/hotel-room-1408755885Nti.jpg" class="img" alt="bed">
+          </div>
+        </div>
+
+        <hr>
+
+        <div class="row margin">
+          <div class="col-sm-4">
+            <img src="https://publicdomainpictures.net/pictures/30000/velka/red-apple-isolated.jpg" class="img" alt="apple">
+          </div>
+
+          <div class="col-sm-8">
+            <h1>Nutrition and Health</h1>
+            <h3>
+              In addition to sleep, I would also like to start making more health-conscious decisions when it comes to what I'm eating. My nutrition right now is poor and could definitely use
+              improvement. I think that this is a very important goal and I will continue to work towards this throughout the year.
+            </h3>
+          </div>
+        </div>
+
+        <hr>
+
+        <div class="row margin">
+          <div class="col-sm-8">
+            <h1>Productivity</h1>
+            <h3>
+              I want to start being more productive with my schoolwork and with things that I want to learn how to do. A good first step towards better productivity would be to
+              begin my homework as soon as I get home, instead of putting it off until right before I go to sleep and thus making me stay up longer (which connects to my first
+              goal).
+            </h3>
+          </div>
+
+          <div class="col-sm-4">
+            <img src="https://publicdomainpictures.net/pictures/380000/velka/00014-statistics.jpg" class="img" alt="graph">
+          </div>
+        </div>
+
+        <hr>
+
+        <div class="row margin">
+          <div class="col-sm-4">
+            <img src="https://publicdomainpictures.net/pictures/240000/velka/school-classroom-illustration.jpg" class="img" alt="school">
+          </div>
+
+          <div class="col-sm-8">
+            <h1>School</h1>
+            <h3>
+              My final goal is to maintain what I already have. I got good grades in the first marking period and I would like to keep those standards for the rest of the second and beyond.
+              So far it is going well. Later during the year my most important goal will be to score at least a 3 or higher on my two AP exams.
+            </h3>
+          </div>
+        </div>
+        </div>
+
+        <br><hr>
+
+        <h1 class="text-center"><u>How will I get there?</u></h1>
+
+        <div class="row">
+          <div class="container-fluid">
+            <h3>
+              For the first three months of 2021, I will skew my focus on certain goals. I will put the most important goals to me at the forefront of my attention and put
+              less important goals on the backburner. The most important goals are my sleep and my productivity. These will garner the majority of my attention because
+              grades are already where I want them to be; my goal for this portion of the year is simply to maintain them.
+              <br><br><br>
+              For the next three months, I will shift my attention to academics. The AP tests are in May, so I will need to focus the majority of my time on school
+              to ensure that I perform well on my exams. Additionally during this period I will shift a little bit more of my focus onto nutrition. This does not mean that I
+              will completely ignore my nutrition until March; rather, it means that I will focus on my other goals more.
+              <br><br><br>
+              For the period of three months after that, school will be over. Thus, I will not worry so much about productivity or school and mostly focus on nutrition and sleep. The
+              summer is when I stay up the latest, so getting sufficient amounts of sleep will be my top priority.
+              <br><br><br>
+              For the last three months of the year, all four goals will be of equal importance to me. I will need to be productive and get enough sleep to get good grades because
+              I want to take hard classes next year. My nutrition will also receive equal attention.
+            </h3>
+          </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+          <h1 class="text-center">Those are all my goals! Happy new year!</h1>
+        </div>
+      </div>
+
+      <br><hr>
+
+      <!-- footer -->
+      <footer class="container-fluid text-center sans">
+        <p class="footer">
+          <a href="work.html">Back to Portfolio</a>
+          <br>
+        </p>
+      </footer>
+    </body>
+
+    </Html>
