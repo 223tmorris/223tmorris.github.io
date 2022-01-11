@@ -1,0 +1,152 @@
+<Html>
+
+    <Head>
+
+    <Title>
+    Portfolio | Terminator Ghost
+    </Title>
+
+    <link rel="icon" type="image/icon type" href="portfolio.png">
+
+
+    <Script
+     src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"
+    ></Script>
+
+    <Script
+     type="text/javascript" src="https://static.codehs.com/gulp/80550f5fc4071985bfef352d04f005ca3de931d3/chs-js-lib/chs.js"
+    ></Script>
+
+
+    <Style>
+
+    canvas {
+        border: 1px solid black;
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    pre {
+        border: 1px solid black;
+        display: inline-block;
+        width: 400px;
+        height: 500px;
+        background-color: #F5F5F5;
+    }
+    </Style>
+
+
+    </Head>
+
+
+    <Body>
+
+    <a href="work.html">Back to Portfolio</a>
+
+    <H1>
+    Terminator Ghost
+    </H1>
+
+
+<Canvas
+
+    width="400"
+    height="500"
+    class="codehs-editor-canvas"
+    ></Canvas>
+
+    <Pre
+     id="console"
+    ></Pre>
+
+
+
+    <Script>
+
+    window.onload = function() {
+
+       function start(){
+          println("terminator ghost");
+          var text = new Text("I'LL BE BACK", "26pt Monaco");
+          text.setPosition(100, 140);
+          add(text);
+
+          var outRad = 70;
+
+          var outHead = new Circle(outRad);
+          outHead.setPosition(getWidth()/2, getHeight()/2);
+          outHead.setColor(Color.BLACK);
+          add(outHead);
+
+          var outBod = new Rectangle(outRad*2, outRad*12/7);
+          outBod.setPosition(getWidth()/2 - outRad, getHeight()/2);
+          outBod.setColor(Color.BLACK);
+          add(outBod);
+
+          for(var i = 0; i < 3; i++){
+            var outFoot = new Circle(outRad*2/6);
+            outFoot.setPosition(getWidth()/2 + outRad - outRad*2/6 - (outRad*2/6)*2*i, getHeight()/2 + outRad*12/7);
+            outFoot.setColor(Color.BLACK);
+            add(outFoot);
+          }
+
+          var inRad = 65;
+
+          var inHead = new Circle(inRad);
+          inHead.setPosition(getWidth()/2, getHeight()/2);
+          inHead.setColor(Color.GRAY);
+          add(inHead);
+
+          var inBod = new Rectangle(inRad*2, inRad*12/7);
+          inBod.setPosition(getWidth()/2 - inRad, getHeight()/2);
+          inBod.setColor(Color.WHITE);
+          add(inBod);
+
+          for(var i = 0; i < 3; i++){
+            var inFoot = new Circle(inRad*2/6);
+            inFoot.setPosition(getWidth()/2 + inRad - inRad*2/6 - (inRad*2/6)*2*i, getHeight()/2 + inRad*12/7);
+            inFoot.setColor(Color.WHITE);
+            add(inFoot);
+          }
+
+          var outEye = new Circle(inRad/2);
+          outEye.setPosition(getWidth()/2, getHeight()/2);
+          outEye.setColor(Color.BLACK);
+          add(outEye);
+
+          var inEye = new Circle(inRad/3/2);
+          inEye.setPosition(getWidth()/2, getHeight()/2);
+          inEye.setColor(Color.RED);
+          add(inEye);
+
+          var pupil = new Circle(inRad/7/2);
+          pupil.setPosition(getWidth()/2 + (inRad/15/2), getHeight()/2 - (inRad/15/2));
+          pupil.setColor(Color.WHITE);
+          add(pupil);
+
+          var button1 = new Circle(inRad/3/2);
+          button1.setPosition(getWidth()/2 + (2.5*(inRad/3/2 + 0.5)), getHeight()/2 + inRad);
+          button1.setColor(Color.PURPLE);
+          add(button1);
+
+          var button2 = new Circle(inRad/3/2);
+          button2.setPosition(getWidth()/2 + (2.5*(inRad/3/2 + 0.5)) - (2.5*(inRad/3/2 + 0.5)), getHeight()/2 + inRad);
+          button2.setColor(Color.BLUE);
+          add(button2);
+
+          var button3 = new Circle(inRad/3/2);
+          button3.setPosition(getWidth()/2 + (2.5*(inRad/3/2 + 0.5)) - (2.5*(inRad/3/2 + 0.5))*2, getHeight()/2 + inRad);
+          button3.setColor(Color.RED);
+          add(button3);
+       }
+
+        if (typeof start === 'function') {
+            start();
+        }
+    };
+    </Script>
+
+
+    </Body>
+
+    </Html>
